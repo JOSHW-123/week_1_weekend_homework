@@ -37,5 +37,12 @@ def get_pets_by_breed(var_input, breed):
             breed_count.append(breed)
     return breed_count
 
+def get_pets_by_breed(var_input, breed):
+    breed_count = []
+    for pet in var_input["pets"]:
+        if pet ["breed"] == breed:
+            breed_count.append(breed)
+    return breed_count
+
    
     

@@ -28,6 +28,14 @@ def increase_pets_sold(pet_shop, extra_pets):
 
 def get_stock_count(pet_shop):
     return len(pet_shop ["pets"])
-    
+
+def get_pets_by_breed(var_input, breed):
+
+    breed_count = []
+    for pet in var_input["pets"]:
+        if pet ["breed"] == breed:
+            breed_count.append(breed)
+    return breed_count
+
    
     

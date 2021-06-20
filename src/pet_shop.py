@@ -51,7 +51,13 @@ def find_pet_by_name( pet_shop_stock, name):
             result = pet
     return result
 
+def find_pet_by_name(var_input, name_input):
+    for pet in var_input["pets"]:
+        if pet["name"] == None:
+            return None
 
+        elif pet ["name"] == name_input:
+            return pet
 
 
 
